@@ -7,7 +7,7 @@ module CKB
 
       DEFAULT_LIMIT = 1000
 
-      def initialize(indexer_host = CKB::RPC::DEFAULT_INDEXER_URL, timeout_config = {})
+      def initialize(indexer_host = CKB::RPC::DEFAULT_URL, timeout_config = {})
         @rpc = CKB::RPC.new(host: indexer_host, timeout_config: timeout_config)
       end
 
